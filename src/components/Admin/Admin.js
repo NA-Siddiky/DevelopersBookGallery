@@ -9,13 +9,13 @@ import "./Admin.css"
 const Admin = () => {
 	return (
 		<div className="container">
-			<h1>Please Add your Product</h1>
+			<h3>Select an option from the list to Add, Manage and More.</h3>
 			<div className="row">
 				<div className="col-md-4 adminSidebar">
 					<Link to="/admin/addproduct">Add products</Link>
-					<br/>
+					<br />
 					<Link to="/admin/manageorder">Manage Order</Link>
-					<br/>
+					<br />
 					<Link to="/admin/manageproduct">Manage products</Link>
 				</div>
 				<div className="col-md-8">

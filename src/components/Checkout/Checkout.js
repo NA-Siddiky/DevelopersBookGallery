@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { BookContext } from '../Context/BookContext';
 import { toast } from 'react-toastify';
@@ -19,6 +19,8 @@ const Checkout = () => {
 			.then((data) => setBook(data[0]));
 	}, [id]);
 
+	const history = useHistory();
+
 	const checkoutBtn = () => {
 		const orderInfo = {
 			bookName: name,
@@ -33,6 +35,7 @@ const Checkout = () => {
 		axios.post(`https://banana-surprise-70079.herokuapp.com/saveorder`, orderInfo).then((res) => {
 			console.log(res);
 			toast.success('Checkout Successfully');
+			history.push("/")
 		});
 	};
 	return (
@@ -68,7 +71,6 @@ const Checkout = () => {
 					<h6>Author{book.author}</h6>
 					<h5>Price:- ${book.price}</h5>
 					<h3>Please confirm your Order.</h3>
-					{/* <button className="btn-primary btn" onClick={checkoutBtn}>Checkout</button> */}
 				</div>
 			</div>
 		</div>

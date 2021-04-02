@@ -13,7 +13,7 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className="row">
+		<div className="container d-flex flex-wrap">
 			{books.length === 0 && <Spinner />}
 			{books.map((book) => (
 				<Book book={book}></Book>

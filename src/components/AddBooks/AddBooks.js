@@ -62,6 +62,7 @@ const AddBooks = () => {
 
     return (
         <div>
+            <h2>Adding a Book</h2>
             <Form onSubmit={(e) => onSubmit(e)}>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
