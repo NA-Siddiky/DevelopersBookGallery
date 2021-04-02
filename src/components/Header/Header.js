@@ -11,7 +11,7 @@ const Header = () => {
 	const { isSignedIn, name } = user;
 
 	const handleSignOut = () => {
-		console.log('Sign out clicked');
+		// console.log('Sign out clicked');
 		firebase
 			.auth()
 			.signOut()

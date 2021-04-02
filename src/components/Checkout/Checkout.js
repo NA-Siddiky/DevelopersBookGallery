@@ -33,7 +33,7 @@ const Checkout = () => {
 		};
 		// console.log(orderInfo);
 		axios.post(`https://banana-surprise-70079.herokuapp.com/saveorder`, orderInfo).then((res) => {
-			console.log(res);
+			// console.log(res);
 			toast.success('Checkout Successfully');
 			history.push("/")
 		});

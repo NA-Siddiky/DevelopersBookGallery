@@ -29,7 +29,7 @@ const AddBooks = () => {
     };
 
     const handleAddBook = (e) => {
-        console.log(e.target.name);
+        // console.log(e.target.name);
         if (e.target.name === 'book') {
             const name = (book.name = e.target.value);
             setBook({ ...book, name });
@@ -43,7 +43,7 @@ const AddBooks = () => {
     };
 
     const handleImageUpload = event => {
-        console.log(event.target.files[0])
+        // console.log(event.target.files[0])
         const imageData = new FormData();
         imageData.set('key', 'bc1891d9e3a9ddc7763a8b1ba4e7c6bd');
         imageData.append('image', event.target.files[0]);

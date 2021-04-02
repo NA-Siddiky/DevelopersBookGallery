@@ -12,7 +12,13 @@ function OrderData(props) {
 		quantity,
 		imgUrl,
 	} = props.order;
-	console.log(props.order);
+	// console.log(props.order);
+
+	const handleConfirm = ()=>{
+		alert("Your Order Placed Successfully.");
+
+	} 
+
 	return (
 		<>
 			<tr>
@@ -22,7 +28,7 @@ function OrderData(props) {
 				<td>{quantity}</td>
 				<td>{email}</td>
 				<td>{price}</td>
-				<td><Button variant="success">Confirm</Button></td>
+				<td><Button onClick={handleConfirm} variant="success">Confirm</Button></td>
 				{props.children}
 			</tr>
 

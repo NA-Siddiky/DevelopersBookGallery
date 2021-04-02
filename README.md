@@ -1,20 +1,25 @@
-# Getting Started with Create React App
+### *Md Nur-E-Alom Siddiky*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ Email :- *siddiky.academic@gmail.com*
 
-## Available Scripts
+ Phone :- *+8801712378303*
+### Project name:- *Developers Book Gallery*
 
-In the project directory, you can run:
+Live Site Link: 
+1. Live Link:- [Developers Book Gallery firebase link](https://developers-book-gallery.web.app/)
 
-### `npm start`
+GitHub Link:-
+2. Client side : https://github.com/Porgramming-Hero-web-course/full-stack-client-NA-Siddiky.git
+3. Server side : https://github.com/Porgramming-Hero-web-course/full-stack-server-NA-Siddiky.git 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Feature's:-
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    * Add Book.
+    * Directly retrieve data from Mongo DB Server.
+    * User can easily add and delete order.
+    * Admin can easily add and delete Books/Orders.
+## Bonus Feature's:-
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    * Manage oder's and Books from admin.
+    * Applying Table.
+    * Fully Responsive for all devices.

@@ -14,7 +14,7 @@ function ManageProduct() {
 	}, []);
 	const deleteBook = (id) => {
 		axios.delete(`https://banana-surprise-70079.herokuapp.com/deletebook/${id}`).then((res) => {
-			console.log(res);
+			// console.log(res);
 			toast.warning('Delete Successfully');
 			history.push('/admin/')
 		});
