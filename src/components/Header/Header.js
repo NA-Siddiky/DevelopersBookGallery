@@ -37,7 +37,7 @@ const Header = () => {
 					<h4>Developers Book Gallery</h4>
 				</Link>
 				<div
-					className="collapse navbar-collapse justify-content-end"
+					className=" navbar-collapse justify-content-end"
 					id="navbarSupportedContent"
 				>
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
