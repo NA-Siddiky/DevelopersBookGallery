@@ -16,7 +16,7 @@ const Home = () => {
 		<div className="container d-flex flex-wrap">
 			{books.length === 0 && <Spinner />}
 			{books.map((book) => (
-				<Book book={book}></Book>
+				<Book key={book._id} book={book}></Book>
 			))}
 		</div>
 	);
