@@ -13,7 +13,7 @@ const AddBooks = () => {
     const onSubmit = data => {
         console.log(book);
 
-        const url = `http://localhost:5000/addBook`;
+        const url = `https://banana-surprise-70079.herokuapp.com/addBook`;
         fetch(url, {
             method: 'POST',
             headers: {

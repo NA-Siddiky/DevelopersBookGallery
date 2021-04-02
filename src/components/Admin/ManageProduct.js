@@ -5,12 +5,12 @@ import Book from './Book';
 function ManageProduct() {
 	const [books, setBooks] = useState([]);
 	useEffect(() => {
-		axios.get(`http://localhost:5000/books`).then((response) => {
+		axios.get(`https://banana-surprise-70079.herokuapp.com/books`).then((response) => {
 			setBooks(response.data);
 		});
 	}, []);
 	const deleteBook = (id) => {
-		axios.delete(`http://localhost:5000/deletebook/${id}`).then((res) => {
+		axios.delete(`https://banana-surprise-70079.herokuapp.com/deletebook/${id}`).then((res) => {
 			console.log(res);
 		});
 	};

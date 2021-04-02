@@ -11,7 +11,7 @@ const Orders = () => {
 			email: user.email,
 		};
 		axios
-			.post(`http://localhost:5000/userorder`, email)
+			.post(`https://banana-surprise-70079.herokuapp.com/userorder`, email)
 			.then((response) => setOrderData(response.data));
 	}, [user]);
 	return (

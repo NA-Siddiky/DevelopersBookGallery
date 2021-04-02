@@ -6,12 +6,12 @@ import OrderData from '../Orders/OrderData';
 function ManageOrder() {
 	const [orders, setOrder] = useState([]);
 	useEffect(() => {
-		axios.get(`http://localhost:5000/getorder`).then((response) => {
+		axios.get(`https://banana-surprise-70079.herokuapp.com/getorder`).then((response) => {
 			setOrder(response.data);
 		});
 	}, []);
 	const deleteOrder = (id) => {
-		axios.delete(`http://localhost:5000/deleteorder/${id}`).then((res) => {
+		axios.delete(`https://banana-surprise-70079.herokuapp.com/deleteorder/${id}`).then((res) => {
 			toast.success('YuY Deleted');
 		});
 	};

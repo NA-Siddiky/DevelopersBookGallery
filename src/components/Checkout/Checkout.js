@@ -11,7 +11,7 @@ const Checkout = () => {
 
 	const { email } = user;
 	useEffect(() => {
-		fetch(`http://localhost:5000/checkout/${id}`)
+		fetch(`https://banana-surprise-70079.herokuapp.com/checkout/${id}`)
 			.then((response) => response.json())
 			.then((data) => setBook(data[0]));
 	}, [id]);
@@ -27,7 +27,7 @@ const Checkout = () => {
 			date: new Date(),
 		};
 		// console.log(orderInfo);
-		axios.post(`http://localhost:5000/saveorder`, orderInfo).then((res) => {
+		axios.post(`https://banana-surprise-70079.herokuapp.com/saveorder`, orderInfo).then((res) => {
 			console.log(res);
 		});
 	};
