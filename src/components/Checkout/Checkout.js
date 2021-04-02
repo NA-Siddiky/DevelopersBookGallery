@@ -68,8 +68,8 @@ const Checkout = () => {
 				<div className="col-md-4">
 					<img style={{ width: '200px' }} src={book.url} alt="" />
 					<h5>{book.name}</h5>
-					<h6>Author{book.author}</h6>
-					<h5>Price:- ${book.price}</h5>
+					<h6>Author: {book.author}</h6>
+					<h5>Price: ৳{book.price}</h5>
 					<h3>Please confirm your Order.</h3>
 				</div>
 			</div>

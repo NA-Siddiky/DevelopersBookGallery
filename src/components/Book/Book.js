@@ -15,7 +15,7 @@ const Book = ({ book }) => {
                 <Card.Body>
                     <Card.Title>{book.name}</Card.Title>
                     <Card.Text>Author: {book.author}</Card.Text>
-                    <h5>Price: $ {book.price} <Link to={`/checkout/${book._id}`}><Button variant="primary">Buy Now</Button></Link></h5>
+                    <h5>Price: ৳ {book.price} <Link to={`/checkout/${book._id}`}><Button variant="primary">Buy Now</Button></Link></h5>
                 </Card.Body>
             </Card>
         </div>

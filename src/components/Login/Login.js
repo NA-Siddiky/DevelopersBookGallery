@@ -5,6 +5,7 @@ import firebaseConfig from '../../firebase.config';
 import { BookContext } from '../Context/BookContext';
 import { useHistory, useLocation } from 'react-router';
 import { FcGoogle } from 'react-icons/fc';
+import "./Login.css"
 
 if (!firebase.apps.length) {
 	firebase.initializeApp(firebaseConfig);
@@ -59,9 +60,9 @@ const Login = () => {
 
 	return (
 		<div>
-			<div className="d-flex flex-column align-items-center mt-5">
+			<div className="d-flex flex-column align-items-center mt-5"> 
 
-				<button onClick={handleSignIn}>
+				<button onClick={handleSignIn} className="btn googleBtn">
 					<h4><FcGoogle /> Press google icon to Login</h4>
 				</button>
 			</div>
