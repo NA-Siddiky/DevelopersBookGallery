@@ -15,11 +15,11 @@ const Orders = () => {
 			.then((response) => setOrderData(response.data));
 	}, [user]);
 	return (
-		<div className="d-flex">
+		<ul>
 			{orderData.map((order) => (
 				<OrderData order={order} />
 			))}
-		</div>
+		</ul>
 	);
 };
 

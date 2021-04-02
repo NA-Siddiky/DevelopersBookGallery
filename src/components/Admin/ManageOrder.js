@@ -12,7 +12,7 @@ function ManageOrder() {
 	}, []);
 	const deleteOrder = (id) => {
 		axios.delete(`https://banana-surprise-70079.herokuapp.com/deleteorder/${id}`).then((res) => {
-			toast.success('YuY Deleted');
+			toast.warning('Deleted Successfully');
 		});
 	};
 	return (

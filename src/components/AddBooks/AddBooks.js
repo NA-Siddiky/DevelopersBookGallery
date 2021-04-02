@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import axios from 'axios';
 import { Button, Col } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 const AddBooks = () => {
 
@@ -22,6 +23,7 @@ const AddBooks = () => {
             body: JSON.stringify(book)
         })
             .then(res => console.log('server side response', res))
+        toast.success('Added Successfully');
 
         data.preventDefault();
     };
